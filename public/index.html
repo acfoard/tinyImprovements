@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <p>good morning</p>
+    <div class="container">
+        <div class="row">
+            <div class="header col">
+                <header>
+                    <h1 class='text-center'>Tiny Improvements</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <form action="">
+                    <h3>Send a Kudo!</h3>
+                    <div class="form-group">
+                        <label for="sendingKudoFrom">Send To:</label>
+                        <select class="form-control" name="sendKudoTo" id="kudoTo"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sendingKudoFrom">From:</label>
+                        <select class="form-control" name="sendKudoFrom" id="kudoFrom"></select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="kudoTitle" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Body" id="kudoBody" rows="4" class="form-control"
+                            placeholder="Message"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="kudo col-12 col-lg-6">
+                        <h4>Kudo Title</h4>
+                        <strong>To: Recipient Johnston-Smith<br>From: Sender McSendysend</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora officiis esse
+                            voluptates. Aut voluptas dolorem in, fugiat quam distinctio laboriosam minima aliquam
+                            quisquam iste doloremque excepturi natus ea repellendus! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Obcaecati est rerum provident hic, quisquam veritatis
+                            totam architecto et, sapiente expedita officiis eum unde aliquam esse enim itaque a rem
+                            voluptate!</p>
+                    </div>
+                    <div class="kudo col-12 col-lg-6">
+                        <h4>Kudo Title</h4>
+                        <strong>To: Recipient Johnston-Smith || From: Sender McSendysend</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora officiis esse
+                            voluptates. Aut voluptas dolorem in, fugiat quam distinctio laboriosam minima aliquam
+                            quisquam iste doloremque excepturi natus ea repellendus! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Obcaecati est rerum provident hic, quisquam veritatis
+                            totam architecto et, sapiente expedita officiis eum unde aliquam esse enim itaque a rem
+                            voluptate!</p>
+                    </div>
+                    <div class="kudo col-12 col-lg-6">
+                        <h4>Kudo Title</h4>
+                        <strong>To: Recipient Johnston-Smith || From: Sender McSendysend</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora officiis esse
+                            voluptates. Aut voluptas dolorem in, fugiat quam distinctio laboriosam minima aliquam
+                            quisquam iste doloremque excepturi natus ea repellendus! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Obcaecati est rerum provident hic, quisquam veritatis
+                            totam architecto et, sapiente expedita officiis eum unde aliquam esse enim itaque a rem
+                            voluptate!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src='./js/app.js'></script>
 </body>
+
 </html>

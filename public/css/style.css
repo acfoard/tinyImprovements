@@ -1,0 +1,10 @@
+.header {
+    background-color: #003411;
+    font-family: 'Homemade Apple', cursive;
+    color: whitesmoke;
+    border: 7px solid #af6e4d;
+}
+
+h1 {
+    padding: 12px;
+}

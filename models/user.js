@@ -11,6 +11,18 @@ var UserSchema = new Schema({
         type: String,
         required: "Password is required"
     },
+    noteFrom: [
+        {
+        type: Schema.Types.ObjectId,
+        ref: "Kudo"
+    }
+],
+noteTo: [
+        {
+        type: Schema.Types.ObjectId,
+        ref: "Kudo"
+    }
+]
 });
 
 const User = mongoose.model('User', UserSchema);
