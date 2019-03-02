@@ -1,10 +1,30 @@
+.container {
+    background-color: #668570;
+}
+
 .header {
     background-color: #003411;
     font-family: 'Homemade Apple', cursive;
     color: whitesmoke;
-    border: 7px solid #af6e4d;
+    border: 7px solid #8b3d04;
 }
 
 h1 {
     padding: 12px;
 }
+
+.button {
+    background-color: #194828;
+    color: #ccd6cf;
+    border: 1px solid transparent;
+}
+
+.kudo {
+    background-color: #ccd6cf; 
+    border: #668570 4px solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+

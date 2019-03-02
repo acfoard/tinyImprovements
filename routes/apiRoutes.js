@@ -50,4 +50,12 @@ module.exports = function(app) {
             res.json(err);
         });
     });
+
+    app.delete('/api/kudo', function(req, res) {
+        Kudo.findByIdAndDelete(req.body).then(function(res) {
+            res.json(res);
+        }).catch(function(err) {
+            res.json(err);
+        })
+    })
 };

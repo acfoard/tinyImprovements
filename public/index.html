@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -22,57 +22,54 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4">
-                <form action="">
-                    <h3>Send a Kudo!</h3>
-                    <div class="form-group">
-                        <label for="sendingKudoFrom">Send To:</label>
-                        <select class="form-control" name="sendKudoTo" id="kudoTo"></select>
-                    </div>
-                    <div class="form-group">
-                        <label for="sendingKudoFrom">From:</label>
-                        <select class="form-control" name="sendKudoFrom" id="kudoFrom"></select>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="kudoTitle" placeholder="Title">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="Body" id="kudoBody" rows="4" class="form-control"
-                            placeholder="Message"></textarea>
-                    </div>
-                </form>
+            <div class="col-12 col-md-4 text-center">
+                <br>
+                <br>
+                    <button type="button" class="btn button" data-toggle="modal" data-target="#kudoModal">
+                            Send your own Kudo
+                          </button> 
             </div>
             <div class="col-12 col-md-8">
-                <div class="row">
-                    <div class="kudo col-12 col-lg-6">
-                        <h4>Kudo Title</h4>
-                        <strong>To: Recipient Johnston-Smith<br>From: Sender McSendysend</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora officiis esse
-                            voluptates. Aut voluptas dolorem in, fugiat quam distinctio laboriosam minima aliquam
-                            quisquam iste doloremque excepturi natus ea repellendus! Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Obcaecati est rerum provident hic, quisquam veritatis
-                            totam architecto et, sapiente expedita officiis eum unde aliquam esse enim itaque a rem
-                            voluptate!</p>
+                <div class="row" id="kudoList">
+
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="kudoModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Give a Kudo!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="kudo col-12 col-lg-6">
-                        <h4>Kudo Title</h4>
-                        <strong>To: Recipient Johnston-Smith || From: Sender McSendysend</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora officiis esse
-                            voluptates. Aut voluptas dolorem in, fugiat quam distinctio laboriosam minima aliquam
-                            quisquam iste doloremque excepturi natus ea repellendus! Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Obcaecati est rerum provident hic, quisquam veritatis
-                            totam architecto et, sapiente expedita officiis eum unde aliquam esse enim itaque a rem
-                            voluptate!</p>
+                    <div class="modal-body">
+                            <form action="">
+                                    <div class="form-group">
+                                        <label for="sendingKudoFrom">Send To:</label>
+                                        <select class="form-control list" name="sendKudoTo" id="kudoTo">
+                                            <option value selected disables>Choose One</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sendingKudoFrom">From:</label>
+                                        <select class="form-control list" name="sendKudoFrom" id="kudoFrom">
+                                            <option value selected disables>Choose One</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="kudoTitle" placeholder="Title">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="Body" id="kudoBody" rows="4" class="form-control"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </form>
                     </div>
-                    <div class="kudo col-12 col-lg-6">
-                        <h4>Kudo Title</h4>
-                        <strong>To: Recipient Johnston-Smith || From: Sender McSendysend</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora officiis esse
-                            voluptates. Aut voluptas dolorem in, fugiat quam distinctio laboriosam minima aliquam
-                            quisquam iste doloremque excepturi natus ea repellendus! Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Obcaecati est rerum provident hic, quisquam veritatis
-                            totam architecto et, sapiente expedita officiis eum unde aliquam esse enim itaque a rem
-                            voluptate!</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="sendKudo" class='btn button' data-dismiss="modal">Send Kudo</button>
                     </div>
                 </div>
             </div>
