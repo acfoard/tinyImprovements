@@ -1,4 +1,4 @@
-#Tiny Improvements
+<h1>Tiny Improvements</h1>
 
 <h3>About</h3>
 <p>Tiny Improvements is an app that allows the user to send a "Kudo" to another user. The app renders all previously sent kudos, gives a modal to add a kupo, then will render the new kudo to the bottom of the list once it is sent. Backend is through Mongo DB</p>
